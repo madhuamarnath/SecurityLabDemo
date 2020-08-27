@@ -22,7 +22,7 @@ public class RSABigIntegerDemo {
 		BigInteger M = new BigInteger(br.readLine());
 		BigInteger C = encrypt(M, e, n);
 		System.out.println("Encrypted Message C=" + C);
-		BigInteger M2 = decrypt(C, d, n);
+		BigInteger M2 = decrypt(C, e, n);
 		System.out.println("Decrypted Message M=" + M2);
 	}
 
@@ -32,8 +32,7 @@ public class RSABigIntegerDemo {
 	}
 
 	public static BigInteger decrypt(BigInteger C, BigInteger d, BigInteger n) {
-		BigInteger M = BigInteger.ONE;
-		M = C.modPow(d, n);
+		BigInteger M = C.modPow(d, n);
 		return M;
 	}
 
