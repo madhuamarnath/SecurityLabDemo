@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RSA</title>
+<link href="style.css" rel="stylesheet">
+<script type="text/javascript" src="rsaencrypt.js"></script>
+</head>
+<body>
+<form name="rsaform">
+<fieldset>
+<legend>Selecting Primes and Key Generation by Receiver:</legend>
+<label for="p">Enter Prime p:</label>
+<input type="text" id="p" name="p"><br>
+<label for="q">Enter Prime q:</label>
+<input type="text" id="q" name="q"><br>
+<label for="e">Enter Encryption Constant e:</label>
+<input type="text" id="e" name="e"><br>
+</fieldset> <br>
+<fieldset>
+<legend>Encryption by Sender:</legend>
+<label for="M">Enter Message:</label>
+<input type="text" id="M" name="M"><br>
+<input type="button" value="Encrypt" onClick="encrypt()">
+<input type="reset" value="Clear"><br>
+<label for="M">Encrypted Message:</label>
+<input type="text" id="C" name="C"><br>
+</fieldset><br>
+
+<fieldset>
+<legend>Decryption by Sender:</legend>
+<label for="C2">Cipher Text Message Received:</label>
+<input type="text" id="C2" name="C2"><br>
+<input type="button" value="Calculate Decryption Constant d" onClick="getDecryptionConstant()"><br>
+<label for="d">Decryption Constant:</label>
+<input type="text" id="d" name="d"><br>
+<input type="button" value="Decrypt" onClick="decrypt()">
+<input type="reset" value="Clear"><br>
+<label for="M2">Decrypted Message:</label>
+<input type="text" id="M2" name="M2">
+</fieldset>
+
+</form>
+</body>
+</html>

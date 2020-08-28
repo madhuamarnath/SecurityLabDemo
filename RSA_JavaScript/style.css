@@ -1,0 +1,21 @@
+body {
+	background-color: yellow;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+label {
+	float:left; 
+	width:20em; 
+	text-align:right;
+}
+
+input[type=text] {
+	margin-left: 1em; 
+	margin-bottom: 1em;
+}
+
+
+
