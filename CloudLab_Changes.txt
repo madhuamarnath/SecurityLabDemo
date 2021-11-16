@@ -1,0 +1,7 @@
+This is the change to be made in Experiment No.3 (6th step)
+
+Open google cloud SDK , then type the command dev_appserver.py and specify the location of folder where the above two program files are saved as follows
+
+google-cloud-sdk\bin\dev_appserver.py <<C:\Users\user1\Desktop\test->(sample folder path)>>
+
+("E:\OneDrive\RMDCSE\ACADEMIC\Laboratory\CS8711 CLOUD COMPUTING LAB\Lab-Programs\Expt-3")-> this is a sample file path
